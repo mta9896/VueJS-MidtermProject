@@ -22,7 +22,10 @@ export default new VueRouter({
    */
 
   routes: [
-    { path: '/', component: load('Hello') },
+    { path: '/', component: load('landing-view') },
+    { path: '/login', component: load('login') },
+    { path: '/register', component: load('register') },
+    // { path: '/leaderboard', component: load('leaderboard') },
 
     // Always leave this last one
     { path: '*', component: load('Error404') } // Not found
