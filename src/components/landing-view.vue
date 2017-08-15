@@ -1,7 +1,7 @@
 <template>
   <div class="background">
       <!--<div class="background-body">-->
-    {{test()}}
+    <!--{{test()}}-->
     <!--<img src="statics/background.jpg">-->
     <div class="toolbar">
       <div class="toolbarButtons">
@@ -60,7 +60,7 @@
     QLayout,
     QToolbar,
     QBtn,
-    QCard,
+    QCard
   } from 'quasar'
 
   export default {
@@ -109,7 +109,7 @@
 
     methods: {
       foo () {
-        count++;
+//        count++;
 //        axios.get('laksdjf').then((response) => {
 //
 //        })
@@ -119,7 +119,7 @@
       changeBackGround(imgUrl) {
         console.log(imgUrl);
         let arg = "url('" + imgUrl + "')";
-//        console.log(arg);
+        console.log(arg);
         document.body.style.background = arg;
 //        document.getElementsByClassName('enter-game-button')[0].focus();
         document.body.style.backgroundRepeat = 'no-repeat';
@@ -127,7 +127,10 @@
       },
       test () {
         let url = this.sliderItems[2].image
-        this.changeBackGround(url)
+        setInterval(function (url) {
+
+        }, 2000)
+//        this.changeBackGround(url)
 //        console.log('test: ' + this.sliderItems[0].message)
       }
 
@@ -168,7 +171,7 @@
 <style lang="stylus">
   @import '../statics/font-face.css';
   body
-    background: url(../statics/1.jpg) no-repeat center center fixed;
+    /*background: url(../statics/1.jpg) no-repeat center center fixed;*/
     background-size 100vw 100vh
     font-family "Shabnam"
 
@@ -181,7 +184,7 @@
     height 100%
 
   .background
-    /*background url(../statics/2.jpg) no-repeat center center*/
+    background url(../statics/2.jpg) no-repeat center center
     background-size 100vw 100vh
     display flex
     flex-direction column

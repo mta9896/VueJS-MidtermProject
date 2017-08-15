@@ -1,0 +1,154 @@
+.login_box{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 3px #006080;
+}
+.login_box .header{
+    position: relative;
+    /*margin-top: 10%;*/
+    /*margin-bottom: 20%;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    direction: rtl;
+}
+
+.sign_up{
+    background-color: #e5e5e5;
+    /*margin-top: 15%;*/
+    padding:5%;
+    /*margin-left:-30.5%;*/
+    /*margin-right: -30.5%;*/
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    text-align: center;
+}
+
+.form_container{
+    display: flex;
+    height:80vh;
+    justify-content: center;
+    align-items: center;
+}
+input[type=text], input[type=password] {
+    width: 80%;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid #ccc;
+    /*padding-top: 9%;*/
+
+}
+
+input:focus{
+    outline: none;
+    color:#cc0066;
+    border-bottom: 2px solid #cc0066;
+}
+
+input:focus ~ .form-icon{
+    color: #CC0066;
+}
+
+
+.login_button{
+    width: 100%;
+    font-family: 'Shabnam';
+    margin-top: 20px;
+    background-color: #cc0066;
+    border: none;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.login_button:hover{
+    background-color: #99004d;
+}
+
+input, .login_button{
+    font-size: 1.3em;
+    font-family: 'Shabnam';
+}
+
+.forgot_password{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.forgot_password a{
+    color: gray;
+}
+
+.forgot_password a:hover{
+    color: #cc0066;
+}
+
+.form_item{
+    color:#b3b3b3;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    /*justify-content: center;*/
+}
+
+
+.form_title{
+    color: #707070;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.form_link{
+    color: #4653ff;
+}
+
+.form-icon{
+    color: inherit;
+    margin-left: 5px;
+    order:1;
+}
+
+.float-left{
+    float: left;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .login_box{
+        width: 80%;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .login_box{
+        width: 100%;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .login_box{
+        width: 100%;
+    }
+}
